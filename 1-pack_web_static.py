@@ -6,6 +6,10 @@ import os
 
 
 def do_pack():
+    """
+    Compresses the contents of the web_static folder into a .tgz archive.
+    Returns the archive path if successful, None otherwise.
+    """
     try:
         if not os.path.exists("versions"):
             local('mkdir versions')
